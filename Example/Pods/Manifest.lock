@@ -1,0 +1,16 @@
+PODS:
+  - CLCScrollViewIndicator (0.1.0)
+
+DEPENDENCIES:
+  - CLCScrollViewIndicator (from `../`)
+
+EXTERNAL SOURCES:
+  CLCScrollViewIndicator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CLCScrollViewIndicator: 371bb9b7ad65678cf661bc475a1e4f07f179d49f
+
+PODFILE CHECKSUM: e8b6f11507eb66677acb4ec2fafe31a016aa2146
+
+COCOAPODS: 1.16.2

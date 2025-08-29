@@ -1,0 +1,6 @@
+framework module CLCScrollViewIndicator {
+  umbrella header "CLCScrollViewIndicator-umbrella.h"
+
+  export *
+  module * { export * }
+}

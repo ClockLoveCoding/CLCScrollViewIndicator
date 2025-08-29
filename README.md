@@ -5,11 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/CLCScrollViewIndicator.svg?style=flat)](https://cocoapods.org/pods/CLCScrollViewIndicator)
 [![Platform](https://img.shields.io/cocoapods/p/CLCScrollViewIndicator.svg?style=flat)](https://cocoapods.org/pods/CLCScrollViewIndicator)
 
+CLCScrollViewIndicator is a custom scrollView Indicator which can change the appearance and realize.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+![Example](./images/example.png)
 
 ## Installation
 
@@ -22,7 +24,7 @@ pod 'CLCScrollViewIndicator'
 
 ## Author
 
-ClockLoveCoding, clock.hu@icloud.com
+ClockLoveCoding
 
 ## License
 

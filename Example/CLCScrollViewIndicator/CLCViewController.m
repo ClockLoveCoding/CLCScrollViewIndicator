@@ -7,8 +7,11 @@
 //
 
 #import "CLCViewController.h"
+#import "CLCScrollViewIndicator.h"
 
 @interface CLCViewController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -17,13 +20,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
+    self.tableView.clc_showVerticalScrollIndicator = YES;
+    self.tableView.clc_indicatorSize = 12;
+    self.tableView.clc_indicatorColor = UIColor.brownColor;
+    self.tableView.clc_indicatorRoundCorner = YES;
+    self.tableView.clc_indicatorInsets = UIEdgeInsetsMake(0, 0, 0, -30);
+    self.tableView.clc_indicatorDynamic = NO;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", @(indexPath.row)];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
 }
 
 @end
