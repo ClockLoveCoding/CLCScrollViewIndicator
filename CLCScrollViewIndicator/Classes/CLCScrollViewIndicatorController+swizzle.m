@@ -27,18 +27,18 @@
         }
         return;
     }
+    
+    [self swizzleMethods];
+    
     Protocol *protocol;
     if ([self.scrollView isKindOfClass:UITableView.class]) {
         protocol = @protocol(UITableViewDelegate);
-        [self swizzleTableView];
     } else if ([self.scrollView isKindOfClass:UICollectionView.class]) {
         protocol = @protocol(UICollectionViewDelegate);
-        [self swizzleCollectionView];
     } else {
         protocol = @protocol(UIScrollViewDelegate);
-        [self swizzleScrollview];
     }
-    
+
     if (scrollView.delegate) {
         if ( [scrollView.delegate isKindOfClass:CLCMultiproxierProxy.class]) {
             CLCMultiproxierProxy *proxy = (CLCMultiproxierProxy *)scrollView.delegate;
@@ -53,28 +53,35 @@
     }
 }
 
-- (void)swizzleScrollview {
+- (void)swizzleMethods {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL selector = NSSelectorFromString(@"indicator_setDelegate:");
-        [UIScrollView clc_swizzleMethod:@selector(setDelegate:) withMethod:selector];
+        if ([self.scrollView isKindOfClass:UITableView.class]) {
+            [self swizzleTableViewDelegate];
+        } else if ([self.scrollView isKindOfClass:UICollectionView.class]) {
+            [self swizzleCollectionViewDelegate];
+        } else {
+            [self swizzleScrollviewDelegate];
+        }
+        
+        SEL selector = NSSelectorFromString(@"clcIndicator_willMoveToWindow:");
+        [UIScrollView clc_swizzleMethod:@selector(willMoveToWindow:) withMethod:selector];
     });
 }
 
-- (void)swizzleTableView {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        SEL selector = NSSelectorFromString(@"indicator_setDelegate:");
-        [UITableView clc_swizzleMethod:@selector(setDelegate:) withMethod:selector];
-    });
+- (void)swizzleScrollviewDelegate {
+    SEL selector = NSSelectorFromString(@"clcIndicator_setDelegate:");
+    [UIScrollView clc_swizzleMethod:@selector(setDelegate:) withMethod:selector];
 }
 
-- (void)swizzleCollectionView {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        SEL selector = NSSelectorFromString(@"indicator_setDelegate:");
-        [UICollectionView clc_swizzleMethod:@selector(setDelegate:) withMethod:selector];
-    });
+- (void)swizzleTableViewDelegate {
+    SEL selector = NSSelectorFromString(@"clcIndicator_setDelegate:");
+    [UITableView clc_swizzleMethod:@selector(setDelegate:) withMethod:selector];
+}
+
+- (void)swizzleCollectionViewDelegate {
+    SEL selector = NSSelectorFromString(@"clcIndicator_setDelegate:");
+    [UICollectionView clc_swizzleMethod:@selector(setDelegate:) withMethod:selector];
 }
 
 @end

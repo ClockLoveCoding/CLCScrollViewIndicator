@@ -29,6 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) IBInspectable BOOL clc_indicatorDynamic;
 
+- (void)clc_addHorizontalIndicator;
+- (void)clc_addVerticalIndicator;
+- (void)clc_dynamicHiddenIndicator;
+
 @end
 
 NS_ASSUME_NONNULL_END

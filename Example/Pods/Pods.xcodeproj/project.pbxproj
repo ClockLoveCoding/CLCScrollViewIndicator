@@ -7,45 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		127666C489593C9B5DA78DAEF7382364 /* CLCScrollViewIndicatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B414AE61F271A047A1C1D536A22147 /* CLCScrollViewIndicatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B0C24D9E5F737693DA0F63F99BB0201 /* CLCScrollViewIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D06E691AB34990114EB27C2E1EA3C73 /* CLCScrollViewIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		238585298E0B5529166B74758AC1656A /* CLCDebounceTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D05B1B47DE14DC75CAA2DB56D7AF1AE /* CLCDebounceTask.m */; };
-		2607847FC22252DD23DA99AF4EB50AEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		3D0B8748EF402A849D1B3C77CDF4C0E0 /* CLCIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F35FE2AC284021B2A95A9CFB210741D7 /* CLCIndicator.m */; };
-		47D4B1528672321266E78018CA225AD6 /* CLCIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = A69955E29B106000D995CCE74565E9DD /* CLCIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5162D40338E343126165E86C31CE282F /* CLCDebounceTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F65543C862C99D7E330DC17048255D1 /* CLCDebounceTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02B6164C91DF1AFA5944A7E3CFA4DA9F /* NSObject+CLCswizzleHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 682564764609643AA1405FF55DC1EFE8 /* NSObject+CLCswizzleHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		123D6A65E2DF21A9805A398BE3ED3CA2 /* CLCScrollViewIndicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB6EDA62D8BC6E59B6280177E762E5A /* CLCScrollViewIndicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		172494AE89907EB60A19459DDFE64C43 /* UIScrollView+swizzleDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C263759EFFE87FBF47406B1C28BBBE1 /* UIScrollView+swizzleDelegate.m */; };
+		2F8296244A540B29275C90ECC6EFD09A /* CLCScrollViewIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 74A1B2E03FFCAA840CA61BBD0FAC3243 /* CLCScrollViewIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		340E14DC0884E491680E6D40603DBF8C /* CLCIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1581A95192AC388D75E6094B58EA92 /* CLCIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41A000D12B4B23A1219635FD1EECCB28 /* CLCScrollViewIndicatorController+swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3953492EAC2F0462770DBBC943BD0681 /* CLCScrollViewIndicatorController+swizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		464462411BD47D2CC0D7E8EA9F00CB12 /* UIScrollView+swizzleWillMoveToWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A1A3D7F7497621FB7B402D28F95ED1 /* UIScrollView+swizzleWillMoveToWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE15F5F9C44E39780153AF5FDA80490 /* CLCDebounceTask.h in Headers */ = {isa = PBXBuildFile; fileRef = F917CECC15D9733DD83BA09B63C16694 /* CLCDebounceTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		512A8DDF6DEE83F13C7AFCD588389B72 /* CLCScrollViewIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2C2FCDEC4C5E96EDD813158F8CEF0F /* CLCScrollViewIndicatorController.m */; };
 		55233F73D83196959CBECDD8EF5D1501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		5814D77F4DA322207133FB62AC498268 /* Pods-CLCScrollViewIndicator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB3C102C85425A8E73BDE83CDE8AE92 /* Pods-CLCScrollViewIndicator_Example-dummy.m */; };
+		5C05626A81D7D19B7711CDE950E81BF1 /* CLCIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EB0C50C2735A5F230C28E40154A3F8 /* CLCIndicator.m */; };
 		5F20097A7230F7FE2C74222A62F7803E /* Pods-CLCScrollViewIndicator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFF5F4D1852BFAB1E08F0DEE98D8B33 /* Pods-CLCScrollViewIndicator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69B51C64AF8A7CB335B29198B4546925 /* CLCScrollViewIndicatorController+swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = F59ADD54D2B11074C28429A43D54CB04 /* CLCScrollViewIndicatorController+swizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6785180B5E7C949915AE70C4251A35CD /* NSObject+CLCswizzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDA5BA1E245B4A78887A6169B35AB8 /* NSObject+CLCswizzleHelper.m */; };
 		6BC0B62B612AEDA176E6DA4B6DA31540 /* Pods-CLCScrollViewIndicator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC211B38E1F593A8C8281F7362831125 /* Pods-CLCScrollViewIndicator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8178FF4FD92D768D964B8883C2FCDC8C /* UIScrollView+CLCIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38354A5787AEC2668F350D0BFDF45466 /* UIScrollView+CLCIndicator.m */; };
-		88AC154AE5DFC40B7E62A4513F28F013 /* CLCScrollViewIndicatorController+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC90BFBB8A69B80BA0F68270E3DA394 /* CLCScrollViewIndicatorController+swizzle.m */; };
-		8937E2BFE812E68295D057D13D3CEBAA /* NSObject+CLCswizzleHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5358642AF4D7EE938C4F03F3C0D1CA35 /* NSObject+CLCswizzleHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C79D21F71129BE4AAC1EC8986A4E8C1 /* NSObject+CLCswizzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FFD6B7B5983BD44AAC940B5BAEF3B4 /* NSObject+CLCswizzleHelper.m */; };
+		777CD8EBB89B95C78A24812494A104E8 /* CLCScrollViewIndicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5979FCB2302BCBBD8ECE56F17549E51 /* CLCScrollViewIndicator-dummy.m */; };
+		7D893ED906CC49A28CBA2748CD6C8E93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		842C2BE755DCC6BDB528116625750736 /* CLCMultiproxierProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F19F53FD4B8D1F8664BD1454B8F93F /* CLCMultiproxierProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD26C379FACF4B0DBEDB2334AE9A3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		9708B7A4AF085B042FACF51387CB2C11 /* UIScrollView+swizzleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DEFF478C228A7ED2CFC39BD803EDBF3 /* UIScrollView+swizzleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A82A2E85606DD020D769DA1B268BFC15 /* UIScrollView+CLCIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ABCAA37EE65714F31CC7E7713FC70F9 /* UIScrollView+CLCIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABA12FD554E61F05571F49E5E40D3011 /* CLCIndicatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE69305743A32C90D83A1EFD1705AC2 /* CLCIndicatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B15AF2CBB78A498B88B415670431AE70 /* CLCMultiproxierProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F7375D2E24616DF2CC690D6AFDE107 /* CLCMultiproxierProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA3F56BA9545BBAB01DBA9621D577645 /* CLCScrollViewIndicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BE1A2986D0AA5C0946FB69A221E25BF /* CLCScrollViewIndicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5D407EE8A653B5A28A128BA6BE1AF34 /* CLCScrollViewIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEFD3DE02F9B336AA568887BAA4B36A /* CLCScrollViewIndicatorController.m */; };
-		D73BA6D3CF5794D94F0DDC897BDC9F6C /* CLCMultiproxierProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F01E3D32296DA4293E8BA3A212C37 /* CLCMultiproxierProxy.m */; };
+		BEE5AB130E5C39BB94E67AE549667A39 /* UIScrollView+CLCIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 119CEE227ADD93B6813879B574E5C7CA /* UIScrollView+CLCIndicator.m */; };
+		CDBCCAD74FE80A9763F5BAC472D61985 /* CLCDebounceTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351E6034994B711C1432F9075361DB2 /* CLCDebounceTask.m */; };
+		D2B88E6A757D1A2FC6123A59061A13F3 /* CLCIndicatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F16C616FBCFF55E16E1A58237FC1A0 /* CLCIndicatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D795E8FEA8ACBCBBF6431EDACE10A50F /* UIScrollView+CLCIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 858E52137A98DEF831A1BB1E5E3ADD0E /* UIScrollView+CLCIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D948C507E152D502387503882814F4A2 /* UIScrollView+swizzleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A20677A682CF3725951DBAE7585463D /* UIScrollView+swizzleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCF2BA6DC25B3B7A5686719DAF12B4F7 /* CLCMultiproxierProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542389D5A54912AC040193EB57E423F /* CLCMultiproxierProxy.m */; };
 		DD516415B5267CEBDFD3ADA2DEEB7D0B /* Pods-CLCScrollViewIndicator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 729F3B5F9382459DFE7616196BEB6224 /* Pods-CLCScrollViewIndicator_Tests-dummy.m */; };
-		EE7253E9FC28A538D29ED0299F60A1CF /* CLCScrollViewIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F40CED1DC9BA770B03BC808146D1FEF /* CLCScrollViewIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F144668781D56165AB3349AB194DDECB /* UIScrollView+swizzleDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F3AEC129DD1662A4BDC01212873D0D /* UIScrollView+swizzleDelegate.m */; };
-		FB8EC0FAFD63F07CECF0915C708193FF /* CLCScrollViewIndicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F04919CCEBA21EA634F095644FEC94B /* CLCScrollViewIndicator-dummy.m */; };
+		E0DA74247619B6CAA0C183DEAABF9465 /* CLCScrollViewIndicatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 43852E863CCC14421C365174092E55B4 /* CLCScrollViewIndicatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E872F8C3DCEAE1C8AB428960D71AFC03 /* UIScrollView+swizzleWillMoveToWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E72A33B75EC5203BAB4974840F25110F /* UIScrollView+swizzleWillMoveToWindow.m */; };
+		EA13B6960F32BFA3EA1E938245BE5377 /* CLCScrollViewIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5542385CA37823EA13E1881EFACA9F81 /* CLCScrollViewIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF6EE77180062C2A2DEFD7AA5DF9FC79 /* CLCScrollViewIndicatorController+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A5128BD116A7A9BB3E6A440B837EA /* CLCScrollViewIndicatorController+swizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C5BC4C16608184597FDA2BEC0E52143E /* PBXContainerItemProxy */ = {
+		8ABB1F801719C5257265DE348E6634F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FF3767A81CE5D5F9BAAF673DF55DD738;
 			remoteInfo = "Pods-CLCScrollViewIndicator_Example";
 		};
-		CB6C97E927DB2F3D745C923B8B89777D /* PBXContainerItemProxy */ = {
+		EF45474A233A21063FB9F4E748F89DD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -55,57 +57,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		053403E258212DA007064318FAB0E6DB /* CLCScrollViewIndicator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CLCScrollViewIndicator.release.xcconfig; sourceTree = "<group>"; };
-		09B414AE61F271A047A1C1D536A22147 /* CLCScrollViewIndicatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCScrollViewIndicatorProtocol.h; path = CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorProtocol.h; sourceTree = "<group>"; };
-		0D05B1B47DE14DC75CAA2DB56D7AF1AE /* CLCDebounceTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CLCDebounceTask.m; sourceTree = "<group>"; };
-		0F65543C862C99D7E330DC17048255D1 /* CLCDebounceTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CLCDebounceTask.h; sourceTree = "<group>"; };
+		00F16C616FBCFF55E16E1A58237FC1A0 /* CLCIndicatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCIndicatorProtocol.h; path = CLCScrollViewIndicator/Classes/CLCIndicatorProtocol.h; sourceTree = "<group>"; };
 		10E59CB7163C9673171370D5BE83E618 /* Pods-CLCScrollViewIndicator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CLCScrollViewIndicator_Example.modulemap"; sourceTree = "<group>"; };
-		12F3AEC129DD1662A4BDC01212873D0D /* UIScrollView+swizzleDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+swizzleDelegate.m"; path = "CLCScrollViewIndicator/Classes/UIScrollView+swizzleDelegate.m"; sourceTree = "<group>"; };
-		19053172CC119B2023DD423BC473F8A3 /* CLCScrollViewIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLCScrollViewIndicator-prefix.pch"; sourceTree = "<group>"; };
-		1D06E691AB34990114EB27C2E1EA3C73 /* CLCScrollViewIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCScrollViewIndicator.h; path = CLCScrollViewIndicator/Classes/CLCScrollViewIndicator.h; sourceTree = "<group>"; };
-		26F7F4F4D7C30EF705E2E546C56880DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		35C201A20FAD1F18B9B52E613CF39418 /* CLCScrollViewIndicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CLCScrollViewIndicator.modulemap; sourceTree = "<group>"; };
-		38354A5787AEC2668F350D0BFDF45466 /* UIScrollView+CLCIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+CLCIndicator.m"; path = "CLCScrollViewIndicator/Classes/UIScrollView+CLCIndicator.m"; sourceTree = "<group>"; };
+		119CEE227ADD93B6813879B574E5C7CA /* UIScrollView+CLCIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+CLCIndicator.m"; path = "CLCScrollViewIndicator/Classes/UIScrollView+CLCIndicator.m"; sourceTree = "<group>"; };
+		15EB0C50C2735A5F230C28E40154A3F8 /* CLCIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLCIndicator.m; path = CLCScrollViewIndicator/Classes/CLCIndicator.m; sourceTree = "<group>"; };
+		28F19F53FD4B8D1F8664BD1454B8F93F /* CLCMultiproxierProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CLCMultiproxierProxy.h; sourceTree = "<group>"; };
+		2C263759EFFE87FBF47406B1C28BBBE1 /* UIScrollView+swizzleDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+swizzleDelegate.m"; path = "CLCScrollViewIndicator/Classes/UIScrollView+swizzleDelegate.m"; sourceTree = "<group>"; };
+		36D3A4F426CA01964A37CB54AB765A3A /* CLCScrollViewIndicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CLCScrollViewIndicator.modulemap; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		38D7953C6DC2E96A6F923464E8680B9D /* CLCScrollViewIndicator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CLCScrollViewIndicator; path = CLCScrollViewIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ABCAA37EE65714F31CC7E7713FC70F9 /* UIScrollView+CLCIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+CLCIndicator.h"; path = "CLCScrollViewIndicator/Classes/UIScrollView+CLCIndicator.h"; sourceTree = "<group>"; };
+		3953492EAC2F0462770DBBC943BD0681 /* CLCScrollViewIndicatorController+swizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLCScrollViewIndicatorController+swizzle.h"; path = "CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorController+swizzle.h"; sourceTree = "<group>"; };
 		3AFF5F4D1852BFAB1E08F0DEE98D8B33 /* Pods-CLCScrollViewIndicator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CLCScrollViewIndicator_Example-umbrella.h"; sourceTree = "<group>"; };
-		3DEFF478C228A7ED2CFC39BD803EDBF3 /* UIScrollView+swizzleDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+swizzleDelegate.h"; path = "CLCScrollViewIndicator/Classes/UIScrollView+swizzleDelegate.h"; sourceTree = "<group>"; };
+		3DB8AF74AD344A6F862F5D393AD3AD30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		41A1A3D7F7497621FB7B402D28F95ED1 /* UIScrollView+swizzleWillMoveToWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+swizzleWillMoveToWindow.h"; path = "CLCScrollViewIndicator/Classes/UIScrollView+swizzleWillMoveToWindow.h"; sourceTree = "<group>"; };
 		422C77016129E483E2FBA7DA7D9E3315 /* Pods-CLCScrollViewIndicator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLCScrollViewIndicator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		47FFD6B7B5983BD44AAC940B5BAEF3B4 /* NSObject+CLCswizzleHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CLCswizzleHelper.m"; sourceTree = "<group>"; };
-		4ABBA953661A1661D2D07E38929771C0 /* CLCScrollViewIndicator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CLCScrollViewIndicator-Info.plist"; sourceTree = "<group>"; };
-		534177C9F946C03A32DA1F8241C53F2C /* CLCScrollViewIndicator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CLCScrollViewIndicator.debug.xcconfig; sourceTree = "<group>"; };
-		5358642AF4D7EE938C4F03F3C0D1CA35 /* NSObject+CLCswizzleHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+CLCswizzleHelper.h"; sourceTree = "<group>"; };
+		43852E863CCC14421C365174092E55B4 /* CLCScrollViewIndicatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCScrollViewIndicatorProtocol.h; path = CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorProtocol.h; sourceTree = "<group>"; };
+		4D2C2FCDEC4C5E96EDD813158F8CEF0F /* CLCScrollViewIndicatorController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLCScrollViewIndicatorController.m; path = CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorController.m; sourceTree = "<group>"; };
+		4D4658D59C6DC29FFF38B75A57EB599B /* CLCScrollViewIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLCScrollViewIndicator-prefix.pch"; sourceTree = "<group>"; };
+		513194051E05F1DEA2835CD8C96852C5 /* CLCScrollViewIndicator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CLCScrollViewIndicator.debug.xcconfig; sourceTree = "<group>"; };
+		5337F56B28BCA9F7BBAF08CECF6AF744 /* CLCScrollViewIndicator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CLCScrollViewIndicator.release.xcconfig; sourceTree = "<group>"; };
+		5542385CA37823EA13E1881EFACA9F81 /* CLCScrollViewIndicatorController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCScrollViewIndicatorController.h; path = CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorController.h; sourceTree = "<group>"; };
 		58D42C3FCB4EF10FBD9ACBF601DE2595 /* Pods-CLCScrollViewIndicator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CLCScrollViewIndicator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A9F01E3D32296DA4293E8BA3A212C37 /* CLCMultiproxierProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CLCMultiproxierProxy.m; sourceTree = "<group>"; };
-		5F04919CCEBA21EA634F095644FEC94B /* CLCScrollViewIndicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CLCScrollViewIndicator-dummy.m"; sourceTree = "<group>"; };
-		5F40CED1DC9BA770B03BC808146D1FEF /* CLCScrollViewIndicatorController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCScrollViewIndicatorController.h; path = CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorController.h; sourceTree = "<group>"; };
+		5A20677A682CF3725951DBAE7585463D /* UIScrollView+swizzleDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+swizzleDelegate.h"; path = "CLCScrollViewIndicator/Classes/UIScrollView+swizzleDelegate.h"; sourceTree = "<group>"; };
+		603A5128BD116A7A9BB3E6A440B837EA /* CLCScrollViewIndicatorController+swizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLCScrollViewIndicatorController+swizzle.m"; path = "CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorController+swizzle.m"; sourceTree = "<group>"; };
 		6214C758178D3FC42615F66155FFFD74 /* Pods-CLCScrollViewIndicator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CLCScrollViewIndicator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		625B6D4B85385862603502AB4ACE202C /* Pods-CLCScrollViewIndicator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CLCScrollViewIndicator_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6AE69305743A32C90D83A1EFD1705AC2 /* CLCIndicatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCIndicatorProtocol.h; path = CLCScrollViewIndicator/Classes/CLCIndicatorProtocol.h; sourceTree = "<group>"; };
-		6BE1A2986D0AA5C0946FB69A221E25BF /* CLCScrollViewIndicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLCScrollViewIndicator-umbrella.h"; sourceTree = "<group>"; };
+		63DDA5BA1E245B4A78887A6169B35AB8 /* NSObject+CLCswizzleHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CLCswizzleHelper.m"; sourceTree = "<group>"; };
+		682564764609643AA1405FF55DC1EFE8 /* NSObject+CLCswizzleHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+CLCswizzleHelper.h"; sourceTree = "<group>"; };
+		6AC2FF076CF18253142E68E614E2204F /* CLCScrollViewIndicator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CLCScrollViewIndicator-Info.plist"; sourceTree = "<group>"; };
 		7118D60C46F8FC94D4BDF5F581BA9C9A /* Pods-CLCScrollViewIndicator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLCScrollViewIndicator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		729F3B5F9382459DFE7616196BEB6224 /* Pods-CLCScrollViewIndicator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CLCScrollViewIndicator_Tests-dummy.m"; sourceTree = "<group>"; };
-		77F7375D2E24616DF2CC690D6AFDE107 /* CLCMultiproxierProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CLCMultiproxierProxy.h; sourceTree = "<group>"; };
+		74A1B2E03FFCAA840CA61BBD0FAC3243 /* CLCScrollViewIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCScrollViewIndicator.h; path = CLCScrollViewIndicator/Classes/CLCScrollViewIndicator.h; sourceTree = "<group>"; };
+		8351E6034994B711C1432F9075361DB2 /* CLCDebounceTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CLCDebounceTask.m; sourceTree = "<group>"; };
+		8542389D5A54912AC040193EB57E423F /* CLCMultiproxierProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CLCMultiproxierProxy.m; sourceTree = "<group>"; };
+		858E52137A98DEF831A1BB1E5E3ADD0E /* UIScrollView+CLCIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+CLCIndicator.h"; path = "CLCScrollViewIndicator/Classes/UIScrollView+CLCIndicator.h"; sourceTree = "<group>"; };
 		8B4E4395F57535BA8113FE27AC47AE69 /* Pods-CLCScrollViewIndicator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CLCScrollViewIndicator_Tests.modulemap"; sourceTree = "<group>"; };
-		951247DAE902A44979746A5EFF5BBF36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9B76B24FF42CE12D577DFFAEF84D2124 /* Pods-CLCScrollViewIndicator_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLCScrollViewIndicator_Tests-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A20B355F1F19A7C0F95D01D85878DD50 /* Pods-CLCScrollViewIndicator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLCScrollViewIndicator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A69955E29B106000D995CCE74565E9DD /* CLCIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCIndicator.h; path = CLCScrollViewIndicator/Classes/CLCIndicator.h; sourceTree = "<group>"; };
 		AC211B38E1F593A8C8281F7362831125 /* Pods-CLCScrollViewIndicator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CLCScrollViewIndicator_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B4F05591144D26EE334BF5041E56DD09 /* Pods-CLCScrollViewIndicator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLCScrollViewIndicator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B5979FCB2302BCBBD8ECE56F17549E51 /* CLCScrollViewIndicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CLCScrollViewIndicator-dummy.m"; sourceTree = "<group>"; };
 		BDB3C102C85425A8E73BDE83CDE8AE92 /* Pods-CLCScrollViewIndicator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CLCScrollViewIndicator_Example-dummy.m"; sourceTree = "<group>"; };
 		C4919906F6DE0579708DC86BF53EF83A /* Pods-CLCScrollViewIndicator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLCScrollViewIndicator_Example-Info.plist"; sourceTree = "<group>"; };
-		CEEFD3DE02F9B336AA568887BAA4B36A /* CLCScrollViewIndicatorController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLCScrollViewIndicatorController.m; path = CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorController.m; sourceTree = "<group>"; };
+		CA1581A95192AC388D75E6094B58EA92 /* CLCIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCIndicator.h; path = CLCScrollViewIndicator/Classes/CLCIndicator.h; sourceTree = "<group>"; };
+		CAB6EDA62D8BC6E59B6280177E762E5A /* CLCScrollViewIndicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLCScrollViewIndicator-umbrella.h"; sourceTree = "<group>"; };
 		D16497CF3D85DCF76D2A6834B92E8F51 /* Pods-CLCScrollViewIndicator_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CLCScrollViewIndicator_Example"; path = Pods_CLCScrollViewIndicator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAC90BFBB8A69B80BA0F68270E3DA394 /* CLCScrollViewIndicatorController+swizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLCScrollViewIndicatorController+swizzle.m"; path = "CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorController+swizzle.m"; sourceTree = "<group>"; };
 		DE5D21E1EAD368A24164E5A03325FB1A /* Pods-CLCScrollViewIndicator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLCScrollViewIndicator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F35FE2AC284021B2A95A9CFB210741D7 /* CLCIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLCIndicator.m; path = CLCScrollViewIndicator/Classes/CLCIndicator.m; sourceTree = "<group>"; };
-		F59ADD54D2B11074C28429A43D54CB04 /* CLCScrollViewIndicatorController+swizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLCScrollViewIndicatorController+swizzle.h"; path = "CLCScrollViewIndicator/Classes/CLCScrollViewIndicatorController+swizzle.h"; sourceTree = "<group>"; };
-		F67A5A3096CBB03ADFC61568937ACBCC /* CLCScrollViewIndicator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CLCScrollViewIndicator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E72A33B75EC5203BAB4974840F25110F /* UIScrollView+swizzleWillMoveToWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+swizzleWillMoveToWindow.m"; path = "CLCScrollViewIndicator/Classes/UIScrollView+swizzleWillMoveToWindow.m"; sourceTree = "<group>"; };
+		F1FF7878DB6975DF090CD94BA47E71E1 /* CLCScrollViewIndicator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CLCScrollViewIndicator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F84C45A713BB75A45FCB9A36293998FD /* Pods-CLCScrollViewIndicator_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CLCScrollViewIndicator_Tests"; path = Pods_CLCScrollViewIndicator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F917CECC15D9733DD83BA09B63C16694 /* CLCDebounceTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CLCDebounceTask.h; sourceTree = "<group>"; };
 		F9F3C6188DE1BFC6FC37F4C098B83B82 /* Pods-CLCScrollViewIndicator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLCScrollViewIndicator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FCC1F8DBCBC8C5A102815EDE5A610139 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +121,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		933911B34666908FB4C1BCEE4E0218AC /* Frameworks */ = {
+		5C0658035FC87868531C165F06FBFCA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2607847FC22252DD23DA99AF4EB50AEF /* Foundation.framework in Frameworks */,
+				7D893ED906CC49A28CBA2748CD6C8E93 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1055CDEB449E5F35DD3D1D6EAE301934 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				628E873CE3E9E4987803FC065BA9A419 /* CLCScrollViewIndicator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		1E9E8FC4DF01B26421B2D97C03729DF9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,30 +157,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2A2116DC4E7A541744145FDB0CED1737 /* CLCScrollViewIndicator */ = {
+		3ADB71D8213443A5EBD591BC543151F5 /* MultiproxierProxy */ = {
 			isa = PBXGroup;
 			children = (
-				A69955E29B106000D995CCE74565E9DD /* CLCIndicator.h */,
-				F35FE2AC284021B2A95A9CFB210741D7 /* CLCIndicator.m */,
-				6AE69305743A32C90D83A1EFD1705AC2 /* CLCIndicatorProtocol.h */,
-				1D06E691AB34990114EB27C2E1EA3C73 /* CLCScrollViewIndicator.h */,
-				5F40CED1DC9BA770B03BC808146D1FEF /* CLCScrollViewIndicatorController.h */,
-				CEEFD3DE02F9B336AA568887BAA4B36A /* CLCScrollViewIndicatorController.m */,
-				F59ADD54D2B11074C28429A43D54CB04 /* CLCScrollViewIndicatorController+swizzle.h */,
-				DAC90BFBB8A69B80BA0F68270E3DA394 /* CLCScrollViewIndicatorController+swizzle.m */,
-				09B414AE61F271A047A1C1D536A22147 /* CLCScrollViewIndicatorProtocol.h */,
-				3ABCAA37EE65714F31CC7E7713FC70F9 /* UIScrollView+CLCIndicator.h */,
-				38354A5787AEC2668F350D0BFDF45466 /* UIScrollView+CLCIndicator.m */,
-				3DEFF478C228A7ED2CFC39BD803EDBF3 /* UIScrollView+swizzleDelegate.h */,
-				12F3AEC129DD1662A4BDC01212873D0D /* UIScrollView+swizzleDelegate.m */,
-				5BC82174B47C11C5B7F875DA86968945 /* MultiproxierProxy */,
-				EEC80AEAD5456F90D9CF1D813E02232A /* Pod */,
-				9343083892363390AC4895EC8C50C1D2 /* Support Files */,
-				E710260008EEFECE33DEAC72BA590124 /* swizzleHelper */,
-				6597555F19FFA6923687F4C2DEC7B75C /* TaskCenter */,
+				28F19F53FD4B8D1F8664BD1454B8F93F /* CLCMultiproxierProxy.h */,
+				8542389D5A54912AC040193EB57E423F /* CLCMultiproxierProxy.m */,
 			);
-			name = CLCScrollViewIndicator;
-			path = ../..;
+			name = MultiproxierProxy;
+			path = CLCScrollViewIndicator/Classes/MultiproxierProxy;
 			sourceTree = "<group>";
 		};
 		4981CD8AC397220E27968A6927BA0614 /* Products */ = {
@@ -181,47 +177,52 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5BC82174B47C11C5B7F875DA86968945 /* MultiproxierProxy */ = {
+		55A1C015F973791534208CDEB2803A5D /* swizzleHelper */ = {
 			isa = PBXGroup;
 			children = (
-				77F7375D2E24616DF2CC690D6AFDE107 /* CLCMultiproxierProxy.h */,
-				5A9F01E3D32296DA4293E8BA3A212C37 /* CLCMultiproxierProxy.m */,
+				682564764609643AA1405FF55DC1EFE8 /* NSObject+CLCswizzleHelper.h */,
+				63DDA5BA1E245B4A78887A6169B35AB8 /* NSObject+CLCswizzleHelper.m */,
 			);
-			name = MultiproxierProxy;
-			path = CLCScrollViewIndicator/Classes/MultiproxierProxy;
+			name = swizzleHelper;
+			path = CLCScrollViewIndicator/Classes/swizzleHelper;
 			sourceTree = "<group>";
 		};
-		6597555F19FFA6923687F4C2DEC7B75C /* TaskCenter */ = {
+		628E873CE3E9E4987803FC065BA9A419 /* CLCScrollViewIndicator */ = {
 			isa = PBXGroup;
 			children = (
-				0F65543C862C99D7E330DC17048255D1 /* CLCDebounceTask.h */,
-				0D05B1B47DE14DC75CAA2DB56D7AF1AE /* CLCDebounceTask.m */,
+				CA1581A95192AC388D75E6094B58EA92 /* CLCIndicator.h */,
+				15EB0C50C2735A5F230C28E40154A3F8 /* CLCIndicator.m */,
+				00F16C616FBCFF55E16E1A58237FC1A0 /* CLCIndicatorProtocol.h */,
+				74A1B2E03FFCAA840CA61BBD0FAC3243 /* CLCScrollViewIndicator.h */,
+				5542385CA37823EA13E1881EFACA9F81 /* CLCScrollViewIndicatorController.h */,
+				4D2C2FCDEC4C5E96EDD813158F8CEF0F /* CLCScrollViewIndicatorController.m */,
+				3953492EAC2F0462770DBBC943BD0681 /* CLCScrollViewIndicatorController+swizzle.h */,
+				603A5128BD116A7A9BB3E6A440B837EA /* CLCScrollViewIndicatorController+swizzle.m */,
+				43852E863CCC14421C365174092E55B4 /* CLCScrollViewIndicatorProtocol.h */,
+				858E52137A98DEF831A1BB1E5E3ADD0E /* UIScrollView+CLCIndicator.h */,
+				119CEE227ADD93B6813879B574E5C7CA /* UIScrollView+CLCIndicator.m */,
+				5A20677A682CF3725951DBAE7585463D /* UIScrollView+swizzleDelegate.h */,
+				2C263759EFFE87FBF47406B1C28BBBE1 /* UIScrollView+swizzleDelegate.m */,
+				41A1A3D7F7497621FB7B402D28F95ED1 /* UIScrollView+swizzleWillMoveToWindow.h */,
+				E72A33B75EC5203BAB4974840F25110F /* UIScrollView+swizzleWillMoveToWindow.m */,
+				3ADB71D8213443A5EBD591BC543151F5 /* MultiproxierProxy */,
+				D74E9CB9D4363350E90C720ADBAE0E27 /* Pod */,
+				D1C9077048D139DA0124AF7D593913A8 /* Support Files */,
+				55A1C015F973791534208CDEB2803A5D /* swizzleHelper */,
+				A5A86F9FF13D19BC502E2D3A57430D0C /* TaskCenter */,
+			);
+			name = CLCScrollViewIndicator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A5A86F9FF13D19BC502E2D3A57430D0C /* TaskCenter */ = {
+			isa = PBXGroup;
+			children = (
+				F917CECC15D9733DD83BA09B63C16694 /* CLCDebounceTask.h */,
+				8351E6034994B711C1432F9075361DB2 /* CLCDebounceTask.m */,
 			);
 			name = TaskCenter;
 			path = CLCScrollViewIndicator/Classes/TaskCenter;
-			sourceTree = "<group>";
-		};
-		7C8AF8AFC0A422E00D0FAD50E5B1DF12 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2A2116DC4E7A541744145FDB0CED1737 /* CLCScrollViewIndicator */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		9343083892363390AC4895EC8C50C1D2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				35C201A20FAD1F18B9B52E613CF39418 /* CLCScrollViewIndicator.modulemap */,
-				5F04919CCEBA21EA634F095644FEC94B /* CLCScrollViewIndicator-dummy.m */,
-				4ABBA953661A1661D2D07E38929771C0 /* CLCScrollViewIndicator-Info.plist */,
-				19053172CC119B2023DD423BC473F8A3 /* CLCScrollViewIndicator-prefix.pch */,
-				6BE1A2986D0AA5C0946FB69A221E25BF /* CLCScrollViewIndicator-umbrella.h */,
-				534177C9F946C03A32DA1F8241C53F2C /* CLCScrollViewIndicator.debug.xcconfig */,
-				053403E258212DA007064318FAB0E6DB /* CLCScrollViewIndicator.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CLCScrollViewIndicator";
 			sourceTree = "<group>";
 		};
 		C48737D51A1119019A2528B0C19B5597 /* Pods-CLCScrollViewIndicator_Example */ = {
@@ -245,11 +246,26 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				7C8AF8AFC0A422E00D0FAD50E5B1DF12 /* Development Pods */,
+				1055CDEB449E5F35DD3D1D6EAE301934 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				4981CD8AC397220E27968A6927BA0614 /* Products */,
 				1E9E8FC4DF01B26421B2D97C03729DF9 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D1C9077048D139DA0124AF7D593913A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36D3A4F426CA01964A37CB54AB765A3A /* CLCScrollViewIndicator.modulemap */,
+				B5979FCB2302BCBBD8ECE56F17549E51 /* CLCScrollViewIndicator-dummy.m */,
+				6AC2FF076CF18253142E68E614E2204F /* CLCScrollViewIndicator-Info.plist */,
+				4D4658D59C6DC29FFF38B75A57EB599B /* CLCScrollViewIndicator-prefix.pch */,
+				CAB6EDA62D8BC6E59B6280177E762E5A /* CLCScrollViewIndicator-umbrella.h */,
+				513194051E05F1DEA2835CD8C96852C5 /* CLCScrollViewIndicator.debug.xcconfig */,
+				5337F56B28BCA9F7BBAF08CECF6AF744 /* CLCScrollViewIndicator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CLCScrollViewIndicator";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -260,32 +276,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D74E9CB9D4363350E90C720ADBAE0E27 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF7878DB6975DF090CD94BA47E71E1 /* CLCScrollViewIndicator.podspec */,
+				3DB8AF74AD344A6F862F5D393AD3AD30 /* LICENSE */,
+				FCC1F8DBCBC8C5A102815EDE5A610139 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		E710260008EEFECE33DEAC72BA590124 /* swizzleHelper */ = {
-			isa = PBXGroup;
-			children = (
-				5358642AF4D7EE938C4F03F3C0D1CA35 /* NSObject+CLCswizzleHelper.h */,
-				47FFD6B7B5983BD44AAC940B5BAEF3B4 /* NSObject+CLCswizzleHelper.m */,
-			);
-			name = swizzleHelper;
-			path = CLCScrollViewIndicator/Classes/swizzleHelper;
-			sourceTree = "<group>";
-		};
-		EEC80AEAD5456F90D9CF1D813E02232A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F67A5A3096CBB03ADFC61568937ACBCC /* CLCScrollViewIndicator.podspec */,
-				26F7F4F4D7C30EF705E2E546C56880DC /* LICENSE */,
-				951247DAE902A44979746A5EFF5BBF36 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		FE914B84F32FDE035FC30F479669CA6B /* Pods-CLCScrollViewIndicator_Tests */ = {
@@ -315,22 +321,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		852931B36A3D27A50DAE91C13F4F6ADB /* Headers */ = {
+		639FF6C913E8F2DB3C9FC1CE370DD089 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5162D40338E343126165E86C31CE282F /* CLCDebounceTask.h in Headers */,
-				47D4B1528672321266E78018CA225AD6 /* CLCIndicator.h in Headers */,
-				ABA12FD554E61F05571F49E5E40D3011 /* CLCIndicatorProtocol.h in Headers */,
-				B15AF2CBB78A498B88B415670431AE70 /* CLCMultiproxierProxy.h in Headers */,
-				1B0C24D9E5F737693DA0F63F99BB0201 /* CLCScrollViewIndicator.h in Headers */,
-				BA3F56BA9545BBAB01DBA9621D577645 /* CLCScrollViewIndicator-umbrella.h in Headers */,
-				EE7253E9FC28A538D29ED0299F60A1CF /* CLCScrollViewIndicatorController.h in Headers */,
-				69B51C64AF8A7CB335B29198B4546925 /* CLCScrollViewIndicatorController+swizzle.h in Headers */,
-				127666C489593C9B5DA78DAEF7382364 /* CLCScrollViewIndicatorProtocol.h in Headers */,
-				8937E2BFE812E68295D057D13D3CEBAA /* NSObject+CLCswizzleHelper.h in Headers */,
-				A82A2E85606DD020D769DA1B268BFC15 /* UIScrollView+CLCIndicator.h in Headers */,
-				9708B7A4AF085B042FACF51387CB2C11 /* UIScrollView+swizzleDelegate.h in Headers */,
+				4BE15F5F9C44E39780153AF5FDA80490 /* CLCDebounceTask.h in Headers */,
+				340E14DC0884E491680E6D40603DBF8C /* CLCIndicator.h in Headers */,
+				D2B88E6A757D1A2FC6123A59061A13F3 /* CLCIndicatorProtocol.h in Headers */,
+				842C2BE755DCC6BDB528116625750736 /* CLCMultiproxierProxy.h in Headers */,
+				2F8296244A540B29275C90ECC6EFD09A /* CLCScrollViewIndicator.h in Headers */,
+				123D6A65E2DF21A9805A398BE3ED3CA2 /* CLCScrollViewIndicator-umbrella.h in Headers */,
+				EA13B6960F32BFA3EA1E938245BE5377 /* CLCScrollViewIndicatorController.h in Headers */,
+				41A000D12B4B23A1219635FD1EECCB28 /* CLCScrollViewIndicatorController+swizzle.h in Headers */,
+				E0DA74247619B6CAA0C183DEAABF9465 /* CLCScrollViewIndicatorProtocol.h in Headers */,
+				02B6164C91DF1AFA5944A7E3CFA4DA9F /* NSObject+CLCswizzleHelper.h in Headers */,
+				D795E8FEA8ACBCBBF6431EDACE10A50F /* UIScrollView+CLCIndicator.h in Headers */,
+				D948C507E152D502387503882814F4A2 /* UIScrollView+swizzleDelegate.h in Headers */,
+				464462411BD47D2CC0D7E8EA9F00CB12 /* UIScrollView+swizzleWillMoveToWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +364,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				98029A4A76CDDA03B23BCBDA70AA3880 /* PBXTargetDependency */,
+				74705BA68C7D523EC2DE14DA580038CD /* PBXTargetDependency */,
 			);
 			name = "Pods-CLCScrollViewIndicator_Tests";
 			productName = Pods_CLCScrollViewIndicator_Tests;
@@ -366,12 +373,12 @@
 		};
 		FD8BE07601564A23C530B6A1F7303671 /* CLCScrollViewIndicator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7423B3B8342B7FFCE62BFCC6D108AEF /* Build configuration list for PBXNativeTarget "CLCScrollViewIndicator" */;
+			buildConfigurationList = F64159A273EA665BE25B504590CFBE3B /* Build configuration list for PBXNativeTarget "CLCScrollViewIndicator" */;
 			buildPhases = (
-				852931B36A3D27A50DAE91C13F4F6ADB /* Headers */,
-				2E5E4772F7D64EF466EDEE88F084BEB7 /* Sources */,
-				933911B34666908FB4C1BCEE4E0218AC /* Frameworks */,
-				7B4997DF3F7BADCFB16F7B0845B0C497 /* Resources */,
+				639FF6C913E8F2DB3C9FC1CE370DD089 /* Headers */,
+				DED102B2B96B4FF0BD4C0839F9FBC714 /* Sources */,
+				5C0658035FC87868531C165F06FBFCA3 /* Frameworks */,
+				BAFD5D78BFF1539E0D71BEDC6C9C8DE0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -394,7 +401,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				203E662EA71BA77BDEDEBF6F8BC024D7 /* PBXTargetDependency */,
+				B9D93423DE7AAECD01D966F64C9D44C0 /* PBXTargetDependency */,
 			);
 			name = "Pods-CLCScrollViewIndicator_Example";
 			productName = Pods_CLCScrollViewIndicator_Example;
@@ -433,14 +440,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B4997DF3F7BADCFB16F7B0845B0C497 /* Resources */ = {
+		ADEE53D2CEB2950A735A946D67DDA605 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADEE53D2CEB2950A735A946D67DDA605 /* Resources */ = {
+		BAFD5D78BFF1539E0D71BEDC6C9C8DE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -457,22 +464,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E5E4772F7D64EF466EDEE88F084BEB7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				238585298E0B5529166B74758AC1656A /* CLCDebounceTask.m in Sources */,
-				3D0B8748EF402A849D1B3C77CDF4C0E0 /* CLCIndicator.m in Sources */,
-				D73BA6D3CF5794D94F0DDC897BDC9F6C /* CLCMultiproxierProxy.m in Sources */,
-				FB8EC0FAFD63F07CECF0915C708193FF /* CLCScrollViewIndicator-dummy.m in Sources */,
-				D5D407EE8A653B5A28A128BA6BE1AF34 /* CLCScrollViewIndicatorController.m in Sources */,
-				88AC154AE5DFC40B7E62A4513F28F013 /* CLCScrollViewIndicatorController+swizzle.m in Sources */,
-				8C79D21F71129BE4AAC1EC8986A4E8C1 /* NSObject+CLCswizzleHelper.m in Sources */,
-				8178FF4FD92D768D964B8883C2FCDC8C /* UIScrollView+CLCIndicator.m in Sources */,
-				F144668781D56165AB3349AB194DDECB /* UIScrollView+swizzleDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6878737AF9B2518B34B11CF3A724129D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -489,59 +480,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DED102B2B96B4FF0BD4C0839F9FBC714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBCCAD74FE80A9763F5BAC472D61985 /* CLCDebounceTask.m in Sources */,
+				5C05626A81D7D19B7711CDE950E81BF1 /* CLCIndicator.m in Sources */,
+				DCF2BA6DC25B3B7A5686719DAF12B4F7 /* CLCMultiproxierProxy.m in Sources */,
+				777CD8EBB89B95C78A24812494A104E8 /* CLCScrollViewIndicator-dummy.m in Sources */,
+				512A8DDF6DEE83F13C7AFCD588389B72 /* CLCScrollViewIndicatorController.m in Sources */,
+				FF6EE77180062C2A2DEFD7AA5DF9FC79 /* CLCScrollViewIndicatorController+swizzle.m in Sources */,
+				6785180B5E7C949915AE70C4251A35CD /* NSObject+CLCswizzleHelper.m in Sources */,
+				BEE5AB130E5C39BB94E67AE549667A39 /* UIScrollView+CLCIndicator.m in Sources */,
+				172494AE89907EB60A19459DDFE64C43 /* UIScrollView+swizzleDelegate.m in Sources */,
+				E872F8C3DCEAE1C8AB428960D71AFC03 /* UIScrollView+swizzleWillMoveToWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		203E662EA71BA77BDEDEBF6F8BC024D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CLCScrollViewIndicator;
-			target = FD8BE07601564A23C530B6A1F7303671 /* CLCScrollViewIndicator */;
-			targetProxy = CB6C97E927DB2F3D745C923B8B89777D /* PBXContainerItemProxy */;
-		};
-		98029A4A76CDDA03B23BCBDA70AA3880 /* PBXTargetDependency */ = {
+		74705BA68C7D523EC2DE14DA580038CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CLCScrollViewIndicator_Example";
 			target = FF3767A81CE5D5F9BAAF673DF55DD738 /* Pods-CLCScrollViewIndicator_Example */;
-			targetProxy = C5BC4C16608184597FDA2BEC0E52143E /* PBXContainerItemProxy */;
+			targetProxy = 8ABB1F801719C5257265DE348E6634F7 /* PBXContainerItemProxy */;
+		};
+		B9D93423DE7AAECD01D966F64C9D44C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CLCScrollViewIndicator;
+			target = FD8BE07601564A23C530B6A1F7303671 /* CLCScrollViewIndicator */;
+			targetProxy = EF45474A233A21063FB9F4E748F89DD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		09214EF33AAB2BA0A29B1E31A665D597 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 534177C9F946C03A32DA1F8241C53F2C /* CLCScrollViewIndicator.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator.modulemap";
-				PRODUCT_MODULE_NAME = CLCScrollViewIndicator;
-				PRODUCT_NAME = CLCScrollViewIndicator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		70674E8E96A2284C126D287029C51B08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A20B355F1F19A7C0F95D01D85878DD50 /* Pods-CLCScrollViewIndicator_Example.release.xcconfig */;
@@ -612,42 +585,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		77852B3ACB5255155B7F12D49DCFB847 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 053403E258212DA007064318FAB0E6DB /* CLCScrollViewIndicator.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator.modulemap";
-				PRODUCT_MODULE_NAME = CLCScrollViewIndicator;
-				PRODUCT_NAME = CLCScrollViewIndicator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -747,6 +684,42 @@
 			};
 			name = Release;
 		};
+		BAA0947DA2AC0605691926143ED5074C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5337F56B28BCA9F7BBAF08CECF6AF744 /* CLCScrollViewIndicator.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator.modulemap";
+				PRODUCT_MODULE_NAME = CLCScrollViewIndicator;
+				PRODUCT_NAME = CLCScrollViewIndicator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -810,6 +783,41 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E8D29A9240CAAF7E4D96F3A33A73914F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513194051E05F1DEA2835CD8C96852C5 /* CLCScrollViewIndicator.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CLCScrollViewIndicator/CLCScrollViewIndicator.modulemap";
+				PRODUCT_MODULE_NAME = CLCScrollViewIndicator;
+				PRODUCT_NAME = CLCScrollViewIndicator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -878,11 +886,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7423B3B8342B7FFCE62BFCC6D108AEF /* Build configuration list for PBXNativeTarget "CLCScrollViewIndicator" */ = {
+		F64159A273EA665BE25B504590CFBE3B /* Build configuration list for PBXNativeTarget "CLCScrollViewIndicator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09214EF33AAB2BA0A29B1E31A665D597 /* Debug */,
-				77852B3ACB5255155B7F12D49DCFB847 /* Release */,
+				E8D29A9240CAAF7E4D96F3A33A73914F /* Debug */,
+				BAA0947DA2AC0605691926143ED5074C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

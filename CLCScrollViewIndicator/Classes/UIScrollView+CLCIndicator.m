@@ -25,21 +25,6 @@
 
 @dynamic clc_indicatorState;
 
-#pragma mark - override
-
-- (void)willMoveToWindow:(UIWindow *)newWindow {
-    if (self.clc_showHorizontalScrollIndicator) {
-        [self clc_addHorizontalIndicator];
-    }
-    if (self.clc_showVerticalScrollIndicator) {
-        [self clc_addVerticalIndicator];
-    }
-    if (self.clc_indicatorDynamic) {
-        [self clc_dynamicHiddenIndicator];
-    }
-    [super willMoveToWindow:newWindow];
-}
-
 #pragma mark - private
 
 - (void)clc_addHorizontalIndicator {
@@ -89,7 +74,6 @@
 }
 
 - (void)clc_addVerticalIndicator {
-    
     if (!self.superview) return;
     
     if (self.clc_verticalIndicator) {
@@ -286,7 +270,7 @@
 
 - (BOOL)clc_indicatorDynamic {
     NSNumber *value = objc_getAssociatedObject(self, @selector(clc_indicatorDynamic));
-    if (!value) return NO;
+    if (!value) return YES;
     return value.boolValue;
 }
 

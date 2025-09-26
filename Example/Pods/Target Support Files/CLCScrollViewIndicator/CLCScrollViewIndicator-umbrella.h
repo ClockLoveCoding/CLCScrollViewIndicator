@@ -21,6 +21,7 @@
 #import "CLCDebounceTask.h"
 #import "UIScrollView+CLCIndicator.h"
 #import "UIScrollView+swizzleDelegate.h"
+#import "UIScrollView+swizzleWillMoveToWindow.h"
 
 FOUNDATION_EXPORT double CLCScrollViewIndicatorVersionNumber;
 FOUNDATION_EXPORT const unsigned char CLCScrollViewIndicatorVersionString[];

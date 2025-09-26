@@ -1,5 +1,5 @@
 PODS:
-  - CLCScrollViewIndicator (0.1.1)
+  - CLCScrollViewIndicator (0.1.2)
 
 DEPENDENCIES:
   - CLCScrollViewIndicator (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CLCScrollViewIndicator: 4f5b73701e84b03e73fc4107f9346a38a0961ecb
+  CLCScrollViewIndicator: 9df21b862923f87d2120c0cd899629c8ee3df8a0
 
 PODFILE CHECKSUM: e8b6f11507eb66677acb4ec2fafe31a016aa2146
 
