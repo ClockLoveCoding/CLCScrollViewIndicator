@@ -29,10 +29,10 @@
 
 - (void)willMoveToWindow:(UIWindow *)newWindow {
     if (self.clc_showHorizontalScrollIndicator) {
-        [self addHorizontalIndicator];
+        [self clc_addHorizontalIndicator];
     }
     if (self.clc_showVerticalScrollIndicator) {
-        [self addVerticalIndicator];
+        [self clc_addVerticalIndicator];
     }
     if (self.clc_indicatorDynamic) {
         [self clc_dynamicHiddenIndicator];
@@ -42,11 +42,11 @@
 
 #pragma mark - private
 
-- (void)addHorizontalIndicator {
+- (void)clc_addHorizontalIndicator {
     if (!self.superview) return;
     
     if (self.clc_horizontalIndicator) {
-        [self horizontalIndicatorConfiguration];
+        [self clc_horizontalIndicatorConfiguration];
         return;
     }
     
@@ -54,12 +54,12 @@
     self.clc_horizontalIndicator = indicator;
     [self.superview addSubview:indicator];
     
-    [self horizontalIndicatorConfiguration];
+    [self clc_horizontalIndicatorConfiguration];
     
-    [self prepareForIndicator];
+    [self clc_prepareForIndicator];
 }
 
-- (void)horizontalIndicatorConfiguration {
+- (void)clc_horizontalIndicatorConfiguration {
     CGFloat indicatorSize = self.clc_indicatorSize;
     CGFloat height = indicatorSize * 2;
     CGFloat y = CGRectGetMaxY(self.frame) - height*1.3;
@@ -79,7 +79,7 @@
     self.clc_horizontalIndicator.scrollView = self;
 }
 
-- (void)removeHorizontalIndicator {
+- (void)clc_removeHorizontalIndicator {
     if (!self.clc_horizontalIndicator) return;
     [self.clc_horizontalIndicator removeFromSuperview];
     if (!self.clc_showVerticalScrollIndicator) {
@@ -88,12 +88,12 @@
     self.clc_horizontalIndicator = nil;
 }
 
-- (void)addVerticalIndicator {
+- (void)clc_addVerticalIndicator {
     
     if (!self.superview) return;
     
     if (self.clc_verticalIndicator) {
-        [self verticalIndicatorConfiguration];
+        [self clc_verticalIndicatorConfiguration];
         return;
     }
     
@@ -101,12 +101,12 @@
     self.clc_verticalIndicator = indicator;
     [self.superview addSubview:indicator];
     
-    [self verticalIndicatorConfiguration];
+    [self clc_verticalIndicatorConfiguration];
     
-    [self prepareForIndicator];
+    [self clc_prepareForIndicator];
 }
 
-- (void)verticalIndicatorConfiguration {
+- (void)clc_verticalIndicatorConfiguration {
     CGFloat indicatorSize = self.clc_indicatorSize;
     CGFloat width = indicatorSize * 2;
     CGFloat x = CGRectGetMaxX(self.frame) - width*1.3;
@@ -126,7 +126,7 @@
     self.clc_verticalIndicator.scrollView = self;
 }
 
-- (void)removeVerticalIndicator {
+- (void)clc_removeVerticalIndicator {
     if (!self.clc_verticalIndicator) return;
     [self.clc_verticalIndicator removeFromSuperview];
     if (!self.clc_showHorizontalScrollIndicator) {
@@ -135,7 +135,7 @@
     self.clc_verticalIndicator = nil;
 }
 
-- (void)prepareForIndicator {
+- (void)clc_prepareForIndicator {
     if (!self.clc_indicatorController) {
         self.clc_indicatorController = [CLCScrollViewIndicatorController new];
     };
@@ -155,10 +155,10 @@
 
 - (void)clc_updatedCHIndicatorFrame {
     if (self.clc_showHorizontalScrollIndicator) {
-        [self horizontalIndicatorConfiguration];
+        [self clc_horizontalIndicatorConfiguration];
     }
     if (self.clc_showVerticalScrollIndicator) {
-        [self verticalIndicatorConfiguration];
+        [self clc_verticalIndicatorConfiguration];
     }
 }
 
@@ -191,9 +191,9 @@
 - (void)setClc_showHorizontalScrollIndicator:(BOOL)clc_showHorizontalScrollIndicator {
     if (clc_showHorizontalScrollIndicator) {
         self.showsHorizontalScrollIndicator = NO;
-        [self addHorizontalIndicator];
+        [self clc_addHorizontalIndicator];
     } else {
-        [self removeHorizontalIndicator];
+        [self clc_removeHorizontalIndicator];
     }
     objc_setAssociatedObject(self, @selector(clc_showHorizontalScrollIndicator), @(clc_showHorizontalScrollIndicator), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -206,9 +206,9 @@
 - (void)setClc_showVerticalScrollIndicator:(BOOL)clc_showVerticalScrollIndicator {
     if (clc_showVerticalScrollIndicator) {
         self.showsVerticalScrollIndicator = NO;
-        [self addVerticalIndicator];
+        [self clc_addVerticalIndicator];
     } else {
-        [self removeVerticalIndicator];
+        [self clc_removeVerticalIndicator];
     }
     objc_setAssociatedObject(self, @selector(clc_showVerticalScrollIndicator), @(clc_showVerticalScrollIndicator), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
