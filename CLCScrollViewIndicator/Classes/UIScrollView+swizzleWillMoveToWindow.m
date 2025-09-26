@@ -22,16 +22,7 @@
     if (self.clc_indicatorDynamic) {
         [self clc_dynamicHiddenIndicator];
     }
-    if (![self isMemberOfClass:UIScrollView.class]) {
-        struct objc_super target = {
-            .super_class = class_getSuperclass(self.class),
-            .receiver = self,
-        };
-        NSMethodSignature *(*messageSendSuper)(struct objc_super *, SEL, id) = (__typeof__(messageSendSuper))objc_msgSendSuper;
-        messageSendSuper(&target, @selector(clcIndicator_willMoveToWindow:), newWindow);
-    } else {
-        [self clcIndicator_willMoveToWindow:newWindow];
-    }
+    [self clcIndicator_willMoveToWindow:newWindow];
 }
 
 @end
