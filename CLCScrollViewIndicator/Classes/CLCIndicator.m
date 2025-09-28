@@ -122,10 +122,16 @@
 - (void)dynamicHid {
     if (!self.indicatorDynamic) return;
     if (self.scrollView.isTracking) return;
-    [UIView animateWithDuration:0.3 animations:^{
+    if (self.state == CLCScrollViewIndicatorStateSelected) return;
+    [UIView animateWithDuration:0.25 animations:^{
         self.indicatorContainer.alpha = 0;
         self.backgroundView.alpha = 0;
     }];
+}
+
+- (void)dynamicShow {
+    self.indicatorContainer.alpha = 1;
+    self.backgroundView.alpha = 1;
 }
 
 #pragma mark - private

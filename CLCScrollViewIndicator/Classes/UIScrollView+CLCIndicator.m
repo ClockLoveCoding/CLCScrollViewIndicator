@@ -28,6 +28,8 @@
 #pragma mark - private
 
 - (void)clc_addHorizontalIndicator {
+    [self clc_prepareForIndicator];
+    
     if (!self.superview) return;
     
     if (self.clc_horizontalIndicator) {
@@ -40,8 +42,6 @@
     [self.superview addSubview:indicator];
     
     [self clc_horizontalIndicatorConfiguration];
-    
-    [self clc_prepareForIndicator];
 }
 
 - (void)clc_horizontalIndicatorConfiguration {
@@ -74,6 +74,8 @@
 }
 
 - (void)clc_addVerticalIndicator {
+    [self clc_prepareForIndicator];
+    
     if (!self.superview) return;
     
     if (self.clc_verticalIndicator) {
@@ -86,8 +88,6 @@
     [self.superview addSubview:indicator];
     
     [self clc_verticalIndicatorConfiguration];
-    
-    [self clc_prepareForIndicator];
 }
 
 - (void)clc_verticalIndicatorConfiguration {
@@ -108,6 +108,7 @@
     self.clc_verticalIndicator.indicatorBackgroundColor = self.clc_indicatorBackgroundColor;
     
     self.clc_verticalIndicator.scrollView = self;
+    self.clc_indicatorController.scrollView = self;
 }
 
 - (void)clc_removeVerticalIndicator {
@@ -122,8 +123,8 @@
 - (void)clc_prepareForIndicator {
     if (!self.clc_indicatorController) {
         self.clc_indicatorController = [CLCScrollViewIndicatorController new];
+        self.clc_indicatorController.scrollView = self;
     };
-    self.clc_indicatorController.scrollView = self;
 }
 
 
@@ -148,19 +149,19 @@
 
 - (void)clc_dynamicHiddenIndicator {
     if (self.clc_verticalIndicator) {
-        self.clc_verticalIndicator.alpha = 0;
+        [self.clc_verticalIndicator dynamicHid];
     }
     if (self.clc_horizontalIndicator) {
-        self.clc_horizontalIndicator.alpha = 0;
+        [self.clc_horizontalIndicator dynamicHid];
     }
 }
 
 - (void)clc_dynamicShowIndicator {
     if (self.clc_verticalIndicator) {
-        self.clc_verticalIndicator.alpha = 1;
+        [self.clc_verticalIndicator dynamicShow];
     }
     if (self.clc_horizontalIndicator) {
-        self.clc_horizontalIndicator.alpha = 1;
+        [self.clc_horizontalIndicator dynamicShow];
     }
 }
 

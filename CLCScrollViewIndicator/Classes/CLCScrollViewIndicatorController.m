@@ -23,8 +23,6 @@ static void * CLCScrollViewIndicatorTranslationYContext = &CLCScrollViewIndicato
 
 @property (nonatomic) CGRect lastFrame;
 
-@property (nonatomic) BOOL hidIndicatorMark;
-
 @property (nonatomic, strong) NSMutableArray *keys;
 
 @property (nonatomic, strong) CLCDebounceTask *task;
@@ -260,25 +258,22 @@ static void * CLCScrollViewIndicatorTranslationYContext = &CLCScrollViewIndicato
 }
 
 - (void)prepareToHidIndicator {
+    if (!self.scrollView.clc_indicatorDynamic) return;
     if (self.scrollView.clc_indicatorState == CLCScrollViewIndicatorStateSelected) {
         [self.task cancelTask];
         return;
     }
-    self.hidIndicatorMark = true;
     __weak typeof (self) weakSelf = self;
     [self.task debounceTask:^{
-        if (!weakSelf.hidIndicatorMark || weakSelf.scrollView.clc_indicatorState == CLCScrollViewIndicatorStateSelected) return;
-        [UIView animateWithDuration:0.3 animations:^{
-            if (!weakSelf.hidIndicatorMark || weakSelf.scrollView.clc_indicatorState == CLCScrollViewIndicatorStateSelected) return;
-            [weakSelf.scrollView clc_dynamicHiddenIndicator];
-        }];
+        if (weakSelf.scrollView.clc_indicatorState == CLCScrollViewIndicatorStateSelected) return;
+        [weakSelf.scrollView clc_dynamicHiddenIndicator];
     } oncePerDuration:1];
 }
 
 #pragma mark - UISCrollViewDelegate
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    self.hidIndicatorMark = NO;
+    if (!self.scrollView.clc_indicatorDynamic) return;
     [self.scrollView clc_dynamicShowIndicator];
 }
 
@@ -310,12 +305,10 @@ static void * CLCScrollViewIndicatorTranslationYContext = &CLCScrollViewIndicato
     } else if (context == CLCScrollViewIndicatorTranslationXContext) {
         NSValue *value = [change objectForKey:NSKeyValueChangeNewKey];
         [self reConfigScrollViewWithHorizontalTranslation:value];
-        if (!self.scrollView.clc_indicatorDynamic) return;
         [self prepareToHidIndicator];
     } else if (context == CLCScrollViewIndicatorTranslationYContext) {
         NSValue *value = [change objectForKey:NSKeyValueChangeNewKey];
         [self reConfigScrollViewWithVerticalTranslation:value];
-        if (!self.scrollView.clc_indicatorDynamic) return;
         [self prepareToHidIndicator];
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
