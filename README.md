@@ -19,7 +19,7 @@ CLCScrollViewIndicator is available through [CocoaPods](https://cocoapods.org). 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CLCScrollViewIndicator'
+pod 'CLCScrollViewIndicator', '~> 0.1.4'
 ```
 
 ## Author
