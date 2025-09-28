@@ -129,6 +129,11 @@
     }];
 }
 
+- (void)hidWithoutAnimation {
+    self.indicatorContainer.alpha = 0;
+    self.backgroundView.alpha = 0;
+}
+
 - (void)dynamicShow {
     self.indicatorContainer.alpha = 1;
     self.backgroundView.alpha = 1;

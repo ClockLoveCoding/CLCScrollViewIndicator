@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)clc_addHorizontalIndicator;
 - (void)clc_addVerticalIndicator;
 - (void)clc_dynamicHiddenIndicator;
+- (void)clc_hiddenIndicatorWithoutAnimaiton;
 
 @end
 

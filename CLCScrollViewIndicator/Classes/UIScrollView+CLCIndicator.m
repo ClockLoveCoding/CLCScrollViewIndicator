@@ -156,6 +156,15 @@
     }
 }
 
+- (void)clc_hiddenIndicatorWithoutAnimaiton {
+    if (self.clc_verticalIndicator) {
+        [self.clc_verticalIndicator hidWithoutAnimation];
+    }
+    if (self.clc_horizontalIndicator) {
+        [self.clc_horizontalIndicator hidWithoutAnimation];
+    }
+}
+
 - (void)clc_dynamicShowIndicator {
     if (self.clc_verticalIndicator) {
         [self.clc_verticalIndicator dynamicShow];

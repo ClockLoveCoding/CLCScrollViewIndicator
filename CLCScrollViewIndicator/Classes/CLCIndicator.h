@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL indicatorDynamic;
 
 - (void)dynamicHid;
+- (void)hidWithoutAnimation;
 
 - (void)dynamicShow;
 

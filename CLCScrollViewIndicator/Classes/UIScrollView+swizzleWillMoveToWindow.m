@@ -20,7 +20,7 @@
         [self clc_addVerticalIndicator];
     }
     if (self.clc_indicatorDynamic) {
-        [self clc_dynamicHiddenIndicator];
+        [self clc_hiddenIndicatorWithoutAnimaiton];
     }
     [self clcIndicator_willMoveToWindow:newWindow];
 }
